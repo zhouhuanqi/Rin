@@ -216,9 +216,10 @@ body {
         radial-gradient(ellipse at 80% 20%, rgba(217, 101, 112, 0.1), transparent 30%) !important;
 }
 
-/* 2. 顶部 Logo 文字的 Gemini 流光渐变动画 */
-/* 这里覆盖顶部导航栏的标题元素 */
-header a[href="/"], .logo, header h1 {
+/* 2. 顶部 Logo 文字的 Gemini 流光渐变动画（精准适配 Rin 结构） */
+a[href="/"] > div > div:first-child,
+a[href="/"] .text-2xl,
+a[href="/"] .font-bold {
     background: linear-gradient(270deg, #4285f4, #9b72cb, #d96570, #4285f4) !important;
     background-size: 300% 300% !important;
     -webkit-background-clip: text !important;
