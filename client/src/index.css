@@ -208,29 +208,3 @@ a.toc-link {
 .is-active-link::before {
   @apply bg-theme;
 }
-/* 1. Gemini 暗黑星空背景与顶部弥散光晕 */
-body {
-    background-color: #0a0b10 !important;
-    background-image: 
-        radial-gradient(ellipse at 50% 0%, rgba(66, 133, 244, 0.15), transparent 40%),
-        radial-gradient(ellipse at 80% 20%, rgba(217, 101, 112, 0.1), transparent 30%) !important;
-}
-
-/* 2. 顶部 Logo 文字的 Gemini 流光渐变动画（精准适配 Rin 结构） */
-a[href="/"] > div > div:first-child,
-a[href="/"] .text-2xl,
-a[href="/"] .font-bold {
-    background: linear-gradient(270deg, #4285f4, #9b72cb, #d96570, #4285f4) !important;
-    background-size: 300% 300% !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    animation: geminiStreamer 8s ease infinite !important;
-    font-weight: 800 !important;
-}
-
-/* 定义流光循环动画 */
-@keyframes geminiStreamer {
-    0% { background-position: 0% 50% }
-    50% { background-position: 100% 50% }
-    100% { background-position: 0% 50% }
-}
