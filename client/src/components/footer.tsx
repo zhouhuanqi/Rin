@@ -102,7 +102,7 @@ function Footer() {
                             setDoubleClickTimes(doubleClickTimes + 1)
                         }
                     }}>
-                        © {new Date().getFullYear()} Powered by <a className='hover:underline' href="https://github.com/openRin/Rin" target="_blank">Rin</a>
+                        © {new Date().getFullYear()} MatchLex <a className='hover:underline' href="https://matchlex.com/" target="_blank">运动赛事法律 | 保留所有权利</a>
                     </span>
                     {config.getBoolean('rss') && <>
                         <Spliter />
